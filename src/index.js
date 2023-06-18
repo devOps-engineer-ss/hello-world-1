@@ -1,5 +1,5 @@
 const express = require('express');
-const {readFileSync} = require('fs');
+const { readFileSync } = require('fs');
 const path = require('path');
 const handlebars = require('handlebars');
 
@@ -36,7 +36,7 @@ app.get('/', async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 1000;
 app.listen(PORT, () => {
   console.log(
     `Hello! The container started successfully and is listening for HTTP requests on ${PORT}`
